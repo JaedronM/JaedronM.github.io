@@ -28,7 +28,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0;
@@ -41,6 +41,7 @@ body {
   float: left;
   border-right: 2px solid rgb(55, 55, 55);
   border-bottom: 1px solid rgb(0, 0, 0);
+  color: rgb(255, 184, 28);
 }
 
 .nav_bar {
@@ -71,6 +72,53 @@ html {
 
 * {
   box-sizing: border-box;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: rgb(255, 184, 28);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 2px solid rgb(55, 55, 55);
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(227, 24, 55);
+}
+
+li.dropdown {
+  display: inline-block;
+  float: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.dropdown-content a {
+  color: rgb(255, 184, 28);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  border-right: 0px;
+  border-top: 2px solid rgb(55, 55, 55);
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(227, 24, 55);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*Home Big Text/Image*/
@@ -308,7 +356,7 @@ html {
 .stats_awards-image {
   background: url(Images/pm_stats_awards.jpg) no-repeat center;
   background-size: cover;
-  height: 800px;
+  height: 855px;
   position: bottom;
 }
 
@@ -467,6 +515,7 @@ a.nav_bar:active {
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
 }
+
 .home-image .btn:hover {
   box-shadow: 0 0 10px 0 rgb(227, 24, 55) inset, 0 0 20px 2px rgb(227, 24, 55);
   border: 3px solid rgb(227, 24, 55);
@@ -476,6 +525,11 @@ a.nav_bar:active {
 .nav_link {
   text-decoration: none;
   color: white;
+}
+
+.nav_link:hover {
+  text-decoration: none;
+  color: rgb(255, 184, 28);
 }
 
 .container {
